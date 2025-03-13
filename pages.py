@@ -19,7 +19,7 @@ pages = {
         st.Page(page="Byte.py", title="Bytes"),
         st.Page(page="Bytearray.py", title="Bytearraies"),
         st.Page(page="Memoryview.py", title="Memoryviews", icon=":material/network_intelligence:"),
-        st.Page(page="Nonetype.py", title="Nonetype (None)"),
+        st.Page(page="Nonetype.py", title="NoneType (None)"),
     ],
     "____________________________________________": [
         st.Page(page="Comment.py", title="Comments", icon=":material/tag:"),
