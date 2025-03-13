@@ -1,4 +1,6 @@
 import streamlit as st
 
 st.title("Python for Kids")
-st.write("Python for Kids is a website were you can learn Python and become a Python-Pro! From print() to zip(), we got everything to make you **really** good at Python.")
+link1 = "https://ghostpeps208.streamlit.app/Print"
+link2 = "https://ghostpeps208.streamlit.app/Zip"
+st.write("Python for Kids is a website were you can learn Python and become a Python-Pro! From [print()](%s)" % url1 + " to [zip()](%s)" % url2 + ", we got everything to make you *really* good at Python.")
