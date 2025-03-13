@@ -25,4 +25,5 @@ pages = {
         st.Page(page="Comment.py", title="Comments", icon=":material/tag:"),
     ]
 }
-st.navigation(pages)
+pgs = st.navigation(pages)
+pgs.run()
