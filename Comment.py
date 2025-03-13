@@ -9,3 +9,16 @@ x = 53
 #print("Hello")
 print(x)
         """, line_numbers=True)
+st.write("Comments can also be written on multiple lines using this: '''. Look at an example:")
+st.code(body="""
+'''
+This
+is
+a
+multiline
+comment.
+'''
+        """, line_numbers=True)
+st.write("Comments can also be written on the same line as a piece of code:")
+code = "print("There is a comment next to me!!!") # There is a print statement next to me!!!"
+st.code(body=code, line_numbers=True)
