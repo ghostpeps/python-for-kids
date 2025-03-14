@@ -68,7 +68,7 @@ Hello--How is you're day?
   """, language=None)
 st.write("")
 st.write("Backslashes are also helpful in Python:")
-st.code(body="""
+body = """
 print("It\'s okay")
 print("This is a single backslash: \\")
 print("Hi\nNow I am on a new line")
@@ -78,7 +78,8 @@ print("\tMake sure to indent")
 print("The following letter will dissapear: k\b")
 print("The following is a octal value: \110\145\154\154\157")
 print("The following is a hex value: \x48\x65\x6c\x6c\x6f")
-  """, line_numbers=True)
+  """
+st.code(body=body, line_numbers=True)
 st.write("Output")
 st.code(body="""
 It's okay
