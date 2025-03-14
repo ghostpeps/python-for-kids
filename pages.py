@@ -30,5 +30,6 @@ pages = {
     "Variables": [
         st.Page(page="Variable.py", title="Variables", icon=":material/close:")
     ]
+}
 pgs = st.navigation(pages)
 pgs.run()
