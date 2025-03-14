@@ -58,6 +58,14 @@ st.write("Output")
 st.code(body="""
 The variable x is 5, the variable y is 4.6, and the variable z is Hi again.
   """, language=None)
+st.write("You can also crate raw strings:")
+st.code(body=r"""
+print(r"This is a raw string\nSee")
+  """, line_numbers=True)
+st.write("Output")
+st.code(body="""
+This is a raw string\nSee
+  """, language=None)
 st.write("You can also use seperators:")
 st.code(body="""
 print("Hello", "How is you\'re day?", sep="--")
