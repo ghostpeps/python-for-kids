@@ -28,7 +28,7 @@ pages = {
         st.Page(page="Print.py", title="Print", icon=":material/print:"),
     ],
     "Variables": [
-        st.Page(page="Variable.py", title="Variables", icon=":material/close:")
+        st.Page(page="Variables.py", title="Variables", icon=":material/close:")
     ]
 }
 pgs = st.navigation(pages)
