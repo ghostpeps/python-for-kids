@@ -63,7 +63,7 @@ st.code(body=r"""
 print(r"This is a raw string\nSee")
   """, line_numbers=True)
 st.write("Output")
-st.code(body="""
+st.code(body=r"""
 This is a raw string\nSee
   """, language=None)
 st.write("You can also use seperators:")
