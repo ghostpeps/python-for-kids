@@ -66,7 +66,15 @@ st.write("Output")
 st.code(body="""
 Hello--How is you're day?
   """, language=None)
-st.write("")
+st.write("You can also add different endings:")
+st.code(body="""
+print("Hi", end=" ")
+print("Same line!!!")
+  """, line_numbers=True)
+st.write("Output")
+st.code(body="""
+Hi Same line!!!
+  """, language=None)
 st.write("Backslashes are also helpful in Python:")
 body = """
 print("It\'s okay")
@@ -76,7 +84,7 @@ print("Look, \"Double Quotes\"")
 print("Hello\rHi")
 print("\tMake sure to indent")
 print("The following letter will dissapear: k\b")
-print("The following is a octal value: \110\145\154\154\157")
+print("The following is an octal value: \110\145\154\154\157")
 print("The following is a hex value: \x48\x65\x6c\x6c\x6f")
   """
 st.code(body=body, line_numbers=True)
@@ -90,7 +98,7 @@ Look, "Double Quotes"
 Hello
 Hi
 	Make sure to indent
-The following letter will dissapear: k
-The following is a octal value: Hello
+The following letter will disappear: 
+The following is an octal value: Hello
 The following is a hex value: Hello
   """, language=None)
