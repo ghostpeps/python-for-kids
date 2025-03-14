@@ -21,8 +21,11 @@ pages = {
         st.Page(page="Memoryview.py", title="Memoryviews", icon=":material/network_intelligence:"),
         st.Page(page="Nonetype.py", title="NoneType (None)"),
     ],
-    "____________________________________________": [
+    "Comments": [
         st.Page(page="Comment.py", title="Comments", icon=":material/tag:"),
+    ],
+    "Print": [
+        st.Page(page="Print.py", title="Print", icon=":material/print:"),
     ]
 }
 pgs = st.navigation(pages)
