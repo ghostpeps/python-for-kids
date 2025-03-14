@@ -31,6 +31,7 @@ print("There is a comment next to me!!!") # There is a print statement next to m
         """, line_numbers=True)
 st.write("Output:")
 st.code(body="There is a comment next to me!!!", language=None)
+st.write("")
 st.write("Please rate this site:")
 comment_feedback = st.feedback(options="stars")
 if comment_feedback is not None:
