@@ -112,6 +112,7 @@ The following letter will disappear:
 The following is an octal value: Hello
 The following is a hex value: Hello
   """, language=None)
+st.write("Please rate this site:")
 print_feedback = st.feedback(options="stars")
 total_stars = 0
 rates = 0
