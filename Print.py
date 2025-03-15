@@ -99,7 +99,7 @@ print("The following is a hex value: \x48\x65\x6c\x6c\x6f")
   """
 st.code(body=body, line_numbers=True)
 st.write("Output")
-st.code(body="""
+st.code(body=r"""
 It's okay
 This is a single backslash: \
 Hi
