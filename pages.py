@@ -29,6 +29,13 @@ pages = {
     ],
     "Variables": [
         st.Page(page="Variables.py", title="Variables", icon=":material/close:")
+    ],
+    "Modules": [
+        st.Page(page="Import.py", title="Import", icon=":material/download:"),
+        st.Page(page="From.py", title="From", icon=":material/open_in_new:"),
+        st.Page(page="As.py", title="As", icon=":material/comedy_mask:"),
+        st.Page(page="Built_in_modules.py", title="Built-in Modules", icon=":material/input_circle:"),
+        st.Page(page="Creating_modules.py", title="Creating Modules", icon=":material/build:"),
     ]
 }
 pgs = st.navigation(pages)
