@@ -110,3 +110,6 @@ The following letter will disappear:
 The following is an octal value: Hello
 The following is a hex value: Hello
   """, language=None)
+print_feedback = st.feedback(options="stars")
+if print_feedback is not None:
+        st.write("Thank you!")
