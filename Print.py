@@ -1,5 +1,7 @@
 import streamlit as st
 
+import math
+
 st.title("Print")
 st.write("A print statement is used to show text onto a screen. The text can be any Data Type and can be anything you want. A print statement looks like this:")
 st.code(body="""
@@ -111,5 +113,11 @@ The following is an octal value: Hello
 The following is a hex value: Hello
   """, language=None)
 print_feedback = st.feedback(options="stars")
+total_stars = 0
+rates = 0
 if print_feedback is not None:
+	rates = rates + 1
+	total_stars = total_stars + print_feedback
+	average = total_stars / print_feedback
+	math.ceil(average)
         st.write("Thank you!")
