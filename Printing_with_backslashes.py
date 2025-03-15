@@ -2,7 +2,8 @@ import streamlit as st
 
 import math
 
-st.write(r"Printing with backslashes allows you to print things that you normally shouldn't. For example, \' prints out as '. Look at an example:")
+st.title("Printing with Backslashes")
+st.write(r"Printing with backslashes allows you to print things that you normally shouldn't. For example, \' prints as '. Look at an example:")
 '''
 body = r"""
 print("It\'s okay")
