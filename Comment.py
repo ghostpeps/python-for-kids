@@ -1,5 +1,7 @@
 import streamlit as st
 
+import math
+
 st.title("Commemnts")
 st.write("A comment can be written on any part of a python code, but don't put it in the middle of a piece of code. A comment starts with a # and looks like this:")
 st.code(body="# This is a comment", line_numbers=True)
@@ -34,5 +36,11 @@ st.code(body="There is a comment next to me!!!", language=None)
 st.write("")
 st.write("Please rate this site:")
 comment_feedback = st.feedback(options="stars")
+total_stars = 0
+rates = 0
 if comment_feedback is not None:
+	rates = rates + 1
+	total_stars = total_stars + comment_feedback
+	average = total_stars / comment_feedback
+	math.ceil(average)
         st.write("Thank you!")
