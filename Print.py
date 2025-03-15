@@ -121,4 +121,4 @@ if print_feedback is not None:
 	total_stars = total_stars + print_feedback
 	average = total_stars / print_feedback
 	math.ceil(average)
-st.write("Thank you!")
+	st.write("Thank You!")
