@@ -99,7 +99,7 @@ A
 	""", language=None)
 st.write(r"""\f is a Form Feed, Unicode: U+000C, with different outputs depending on the system.
 Look at possible output #1 if you run Python on an Online Python Interpreter.
-Look at all possible outputs if you run Python on systems or terminals.""")
+Look at all possible outputs if you run Python on systems or terminals. Here is an example:""")
 st.code(body=r"""
 print("This is the first part.\fThis is the second part.")
 	""", line_numbers=True)
