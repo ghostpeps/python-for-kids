@@ -5,11 +5,11 @@ import math
 st.title("Printing with Backslashes")
 st.write(r"Printing with backslashes allows you to print things that you normally shouldn't. For example, \\' prints as '. Look at an example:")
 st.code(body=r"""
-print("It\\'s okay")
+print("It\'s okay")
 	""", line_numbers=True)
 st.write("Output:")
 st.code(body="It\'s okay", language=None)
-st.write("\\\ allows you to print \:")
+st.write("\\\\ allows you to print \\:")
 st.code(body=r"""
 print("This is a single backslash: \\")
   """, line_numbers=True)
