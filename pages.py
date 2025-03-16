@@ -26,6 +26,7 @@ pages = {
     ],
     "Print": [
         st.Page(page="Print.py", title="Print", icon=":material/print:"),
+        st.Page(page="Printing_with_backslashes.py", title="Print with Backslashes", icon=":material/diagnal_line:"),
     ],
     "Variables": [
         st.Page(page="Variables.py", title="Variables", icon=":material/close:")
