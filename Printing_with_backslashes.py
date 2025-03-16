@@ -51,10 +51,10 @@ st.write(r"""
 \t makes a tab or an indent wherever it is written:
 """)
 st.code(body=r"""
-print("Incoming indent!!!\tThere is a indent behind me...")
+print("Incoming indent!!!\tThere is an indent behind me...")
 	""", line_numbers=True)
 st.write("Output:")
-st.code(body=r"""Incoming indent!!!	There is a indent behind me...""", language=None)
+st.code(body=r"""Incoming indent!!!	There is an indent behind me...""", language=None)
 st.write(r"""
 \b backspaces the previous character:
 	""")
