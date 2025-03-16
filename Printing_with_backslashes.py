@@ -3,11 +3,13 @@ import streamlit as st
 import math
 
 st.title("Printing with Backslashes")
-st.write(r"Printing with backslashes allows you to print things that you normally shouldn't. For example, \' prints as '. Look at an example:")
-st.code(body=r"It\'s okay", line_numbers=True)
+st.write(r"Printing with backslashes allows you to print things that you normally shouldn't. For example, \\' prints as '. Look at an example:")
+st.code(body=r"""
+print("It\\'s okay")
+	""", line_numbers=True)
 st.write("Output:")
 st.code(body="It\'s okay", language=None)
-st.write(r"\\ allows you to print \:")
+st.write("\\\ allows you to print \:")
 st.code(body=r"""
 print("This is a single backslash: \\")
   """, line_numbers=True)
@@ -25,7 +27,7 @@ Hi
 Now I am on a new line
   """, language=None)
 st.write(r"""
-\" allows you to write " without any error:
+\\" allows you to write " without any error:
   """)
 st.code(body=r"""
 print("Look, \"Double Quotes\"")
@@ -52,9 +54,7 @@ st.code(body=r"""
 print("\tMake sure to indent\tLook, another indent")
 	""", line_numbers=True)
 st.write("Output:")
-st.code(body=r"""
-	Make sure to indent	Look, another indent
-	""", language=None)
+st.code(body=r"""	Make sure to indent	Look, another indent""", language=None)
 st.write(r"""
 \b backspaces the previous character:
 	""")
