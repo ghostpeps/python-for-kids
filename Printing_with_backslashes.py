@@ -97,9 +97,9 @@ A
 α
 ☃
 	""", language=None)
-st.write(r"""
-
-	""")
+st.write(r"""\f is a Form Feed, Unicode: U+000C, with different outputs depending on the system.
+Look at possible output #1 if you run Python on an Online Python Interpreter.
+Look at all possible outputs if you run Python on systems or terminals.""")
 st.code(body=r"""
 print("This is the first part.\fThis is the second part.")
 	""", line_numbers=True)
@@ -118,7 +118,7 @@ This is the first part.This is the second part.
 	""", language=None)
 st.write("Possible Output #4:")
 st.code(body="""
-This is the first part.\u000cThis is the second part.
+This is the first part.␌This is the second part.
 	""", language=None)
 st.write("Please rate this site:")
 print_feedback = st.feedback(options="stars")
