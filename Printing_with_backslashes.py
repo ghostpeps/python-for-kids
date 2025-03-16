@@ -9,7 +9,7 @@ print("It\'s okay")
 	""", line_numbers=True)
 st.write("Output:")
 st.code(body="It\'s okay", language=None)
-st.write("\\\\ allows you to print \\:")
+st.write(r"\\\\ allows you to print \\:")
 st.code(body=r"""
 print("This is a single backslash: \\")
   """, line_numbers=True)
