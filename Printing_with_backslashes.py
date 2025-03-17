@@ -147,7 +147,7 @@ st.code(body=r"""
 Testing Bell sound␇
 	""", language=None)
 st.write(r"""
-A \ followed by an ASCII octal escape sequence will result in an ASCII symbol. Look at an example:
+A backslash followed by an ASCII octal escape sequence will result in an ASCII symbol. Look at an example:
 	""")
 st.code(body=r"""
 print("\41")
