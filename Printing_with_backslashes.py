@@ -132,8 +132,7 @@ Hello
      World
 	""", language=None)
 st.write(r"""
-\a or \7 is used to create a beep or visual alert. Some systems may ignore the \a or \7 entirely. Sometimes \a or \7 may also print an ASCII
-value of the bell character:
+\a or \7 is used to create a beep, visual alert, and/or print ␇. Some systems may ignore the \a or \7 entirely:
 	""")
 st.code(body=r"""
 print("Testing Bell sound\a")
