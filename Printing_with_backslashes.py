@@ -147,7 +147,7 @@ st.code(body=r"""
 Testing Bell sound␇
 	""", language=None)
 url1 = "https://www.ascii-code.com/"
-st.write("A backslash followed by an ASCII octal escape sequence will result in an ASCII symbol. Go to [ASCII table](%s)" % url1 + " for a full list of ASCII code. Look at an example:")
+st.write("A backslash followed by an ASCII octal escape sequence will result in an ASCII symbol. Go to [ASCII table](%s)" % url1 + " for a full list of ASCII codes. Look at an example:")
 st.code(body=r"""
 print("\41")
 print("\207")
