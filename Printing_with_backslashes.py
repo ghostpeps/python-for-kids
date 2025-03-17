@@ -155,7 +155,7 @@ print("\207")
 print("\275")
 	""", line_numbers=True)
 st.write("Output:")
-body=r"""
+st.code(body=r"""
 !
 ‡
 ½
