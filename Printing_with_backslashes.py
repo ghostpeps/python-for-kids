@@ -64,7 +64,7 @@ print("Hello \bWorld!")
 st.write("Output:")
 st.code(body="HelloWorld!", language=None)
 st.write(r"""
-\ooo where o represents numbers, \ooo is an octal value:
+\ooo where o represents an octal number, \ooo is an octal value:
 	""")
 st.code(body=r"""
 print("The following is an octal value: \110\145\154\154\157")
@@ -74,7 +74,7 @@ st.code(body=r"""
 The following is an octal value: Hello
 	""", language=None)
 st.write(r"""
-\xhh where h represents numbers, \xhh is a hex value:
+\xhh where hh represents a hexadecimal, \xhh is a hex value:
 	""")
 st.code(body=r"""
 print("The following is a hex value: \x48\x65\x6c\x6c\x6f")
@@ -84,7 +84,7 @@ st.code(body=r"""
 The following is a hex value: Hello
 	""", language=None)
 st.write(r"""
-\ucccc, where c represents a number or letter, \xcccc is a unicode:
+\ucccc, where c represents the code point, \ucccc is a Unicode:
 	""")
 st.code(body=r"""
 print("\u0041")
@@ -119,6 +119,46 @@ This is the first part.This is the second part.
 st.write("Possible Output #4:")
 st.code(body="""
 This is the first part.␌This is the second part.
+	""", language=None)
+st.write(r"""
+\v inserts a vertical indent. The outputs may vary, but it generally looks like this:
+	""")
+st.code(body=r"""
+print("Hello\vWorld!")
+	""", line_numbers=True)
+st.write("Output:")
+st.code(body=r"""
+Hello
+     World
+	""", language=None)
+st.write(r"""
+\a or \7 is used to create a beep or visual alert. Some systems may ignore the \a or \7 entirely. Sometimes \a or \7 may also print an ASCII
+value of the bell character:
+	""")
+st.code(body=r"""
+print("Testing Bell sound\a")
+	""", line_numbers=True)
+st.write("Or:")
+st.code(body=r"""
+print("Testing Bell sound\7")
+	""", line_numbers=True)
+st.write("Output:")
+st.code(body=r"""
+Testing Bell sound␇
+	""", language=None)
+st.write(r"""
+A \ followed by an ASCII octal escape sequence will result in an ASCII symbol. Look at an example:
+	""")
+st.code(body=r"""
+print("\41")
+print("\207")
+print("\275")
+	""", line_numbers=True)
+st.write("Output:")
+body=r"""
+!
+‡
+½
 	""", language=None)
 st.write("Please rate this site:")
 print_feedback = st.feedback(options="stars")
